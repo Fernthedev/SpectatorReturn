@@ -1,0 +1,11 @@
+
+rsquid:S3008"ORename this field "MAIN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÍ˜Ñøÿÿÿÿ8çØÃ®Ş-
+‘"squid:ClassVariableVisibilityCheck"WMake USE_COMMAND a static final constant or non-public and provide accessors if needed.(İ¨Íøÿÿÿÿ8šÃ®Ş-
+]squid:S1118":Add a private constructor to hide the implicit public one.(“³±ûÿÿÿÿ8šÃ®Ş-
+{squid:S3008	"]Rename this field "USE_COMMAND_OTHERS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒƒÑ§8ä”Å®Ş-
+“"squid:ClassVariableVisibilityCheck	"^Make USE_COMMAND_OTHERS a static final constant or non-public and provide accessors if needed.(ƒƒÑ§8ä”Å®Ş-
+Š"squid:ClassVariableVisibilityCheck"PMake MAIN a static final constant or non-public and provide accessors if needed.(ùÍ˜Ñøÿÿÿÿ8çØÃ®Ş-
+Vsquid:S1444	"8Make this "public static USE_COMMAND_OTHERS" field final(ƒƒÑ§8ä”Å®Ş-
+Tsquid:S1444"1Make this "public static USE_COMMAND" field final(İ¨Íøÿÿÿÿ8šÃ®Ş-
+ysquid:S3008"VRename this field "USE_COMMAND" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¨Íøÿÿÿÿ8šÃ®Ş-
+Msquid:S1444"*Make this "public static MAIN" field final(ùÍ˜Ñøÿÿÿÿ8çØÃ®Ş-

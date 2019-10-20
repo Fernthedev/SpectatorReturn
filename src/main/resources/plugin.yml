@@ -1,0 +1,6 @@
+name: Spectator Test
+version: ${project.version}
+main: io.github.fernthedev.spectatortest.SpectatorTest
+api-version: 1.14
+authors: [Fernthedev]
+description: A command for no clipping in caves and returning to your original location

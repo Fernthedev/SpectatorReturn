@@ -1,4 +1,4 @@
-package io.github.fernthedev.spectatortest;
+package io.github.fernthedev.spectatortoggle;
 
 public class Constants {
 

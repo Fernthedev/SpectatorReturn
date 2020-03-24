@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.fernthedev</groupId>
-    <artifactId>spectator-test</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>SpectatorToggle</artifactId>
+    <version>1.0-RELEASE</version>
     <packaging>jar</packaging>
 
     <name>Spectator Test</name>
@@ -15,7 +15,6 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.buildVer>1.2</project.buildVer>
     </properties>
 
 
@@ -65,7 +64,7 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
-        <finalName>${artifactId}-${project.buildVer}</finalName>
+        <finalName>${artifactId}-${project.version}</finalName>
     </build>
 
     <repositories>
@@ -98,16 +97,10 @@
             <version>1.18.2</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
-            <groupId>com.github.Fernthedev</groupId>
-            <artifactId>fern-configmanager</artifactId>
-            <version>1.0.4</version> <!-- Check github releases tag for the version. -->
-        </dependency>
-        <dependency>
-            <groupId>com.github.Fernthedev</groupId>
-            <artifactId>FernAPI</artifactId>
-            <version>1.8.5</version>
+            <groupId>com.github.Fernthedev.FernAPI</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.9.0-rc1</version>
         </dependency>
     </dependencies>
 </project>

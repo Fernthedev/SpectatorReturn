@@ -1,10 +1,12 @@
-package io.github.fernthedev.spectatortest;
+package io.github.fernthedev.spectatortoggle;
 
+import com.github.fernthedev.fernapi.universal.Universal;
 import com.github.fernthedev.fernapi.universal.api.CommandSender;
+import com.github.fernthedev.fernapi.universal.api.IFConsole;
+import com.github.fernthedev.fernapi.universal.api.IFPlayer;
 import com.github.fernthedev.fernapi.universal.api.UniversalCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
-import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
 
@@ -13,8 +15,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class SpectateCommand extends UniversalCommand {
-
-
 
     /**
      * Construct a new command.
@@ -32,17 +32,14 @@ public class SpectateCommand extends UniversalCommand {
      */
     @Override
     public void execute(CommandSender sender, String[] args) {
-
-
-
-
         // Player is acting on themselves
         if(args.length == 0) {
-            if(sender instanceof ConsoleCommandSender) {
+            if(sender instanceof IFConsole) {
                 sendMessage(sender, getConfigValues().getNOT_PLAYER());
                 return;
             }
-            Player player = (Player) sender;
+
+            Player player = Universal.getMethods().convertFPlayerToPlayer((IFPlayer<Player>) sender);
 
             spectate(sender, player);
         } else {
@@ -72,7 +69,7 @@ public class SpectateCommand extends UniversalCommand {
             player.setGameMode(GameMode.SPECTATOR);
             sendMessage(sender, getConfigValues().getENTER_SPECTATOR_MODE());
         } else {
-            player.teleport(playerData.getLastLocation());
+            player.teleport(playerData.getLastLocation().toLocation());
             player.setGameMode(playerData.getLastGameMode());
             String mode = playerData.getLastGameMode().name();
 

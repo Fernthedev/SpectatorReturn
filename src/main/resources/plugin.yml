@@ -1,6 +1,10 @@
-name: Spectator Test
+name: SpectatorToggle
 version: ${project.version}
-main: io.github.fernthedev.spectatortest.SpectatorTest
+main: io.github.fernthedev.spectatortoggle.SpectatorToggleMain
 api-version: 1.14
 authors: [Fernthedev]
 description: A command for no clipping in caves and returning to your original location
+commands:
+  spec:
+    description: Toggles betweeen spectator and last game mode
+    usage: /spec [player]

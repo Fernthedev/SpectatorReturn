@@ -1,8 +1,7 @@
-package io.github.fernthedev.spectatortest;
+package io.github.fernthedev.spectatortoggle;
 
 import com.github.fernthedev.fernapi.server.spigot.FernSpigotAPI;
 import com.github.fernthedev.fernapi.universal.Universal;
-import lombok.Getter;
 import org.bukkit.ChatColor;
 
 public final class SpectatorToggleMain extends FernSpigotAPI {
@@ -17,7 +16,6 @@ public final class SpectatorToggleMain extends FernSpigotAPI {
         return instance.configManager;
     }
 
-    @Getter
     private ConfigManager configManager;
 
     @Override
@@ -31,6 +29,9 @@ public final class SpectatorToggleMain extends FernSpigotAPI {
         configManager = new ConfigManager(getDataFolder());
         instance = this;
 
+//        getLogger().info("Command handler " + Universal.getCommandHandler());
+//        getLogger().info("Name: " + new SpectateCommand().getName());
+//        getLogger().info("Command: " + Bukkit.getPluginCommand("spec"));
         Universal.getCommandHandler().registerFernCommand(new SpectateCommand());
     }
 

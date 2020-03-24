@@ -66,7 +66,7 @@ public class ConfigManager {
     }
 
     public SpectatorPlayerData addPlayer(@NonNull Player player) {
-        SpectatorPlayerData spectatorPlayerData = new SpectatorPlayerData(new GLocation(player.getLocation()), player.getGameMode());
+        SpectatorPlayerData spectatorPlayerData = new SpectatorPlayerData(new JSONLocationWrapper(player.getLocation()), player.getGameMode());
 
         playerFileConfig.load();
         playerFileConfig.getConfigData().getPlayerDataMap().put(player.getUniqueId(), spectatorPlayerData);

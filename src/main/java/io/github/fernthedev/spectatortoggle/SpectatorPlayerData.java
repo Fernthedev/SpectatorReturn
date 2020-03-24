@@ -10,7 +10,7 @@ import org.bukkit.GameMode;
 @Getter
 public class SpectatorPlayerData {
 
-    private GLocation lastLocation;
+    private JSONLocationWrapper lastLocation;
     private GameMode lastGameMode;
 
 }

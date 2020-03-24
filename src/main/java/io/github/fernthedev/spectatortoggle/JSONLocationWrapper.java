@@ -6,8 +6,13 @@ import org.bukkit.Location;
 
 import java.util.UUID;
 
+/**
+ * Holds the data that can be
+ * written and parsed as JSON by GSON
+ * to be stored in a file
+ */
 @Getter
-public class GLocation {
+public class JSONLocationWrapper {
 
     private UUID world;
     private double x;
@@ -16,7 +21,7 @@ public class GLocation {
     private float pitch;
     private float yaw;
 
-    public GLocation(Location location) {
+    public JSONLocationWrapper(Location location) {
         this.world = location.getWorld().getUID();
         this.x = location.getX();
         this.y = location.getY();

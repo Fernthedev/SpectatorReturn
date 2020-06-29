@@ -100,7 +100,7 @@
         <dependency>
             <groupId>com.github.Fernthedev.FernAPI</groupId>
             <artifactId>spigot</artifactId>
-            <version>1.9.0-rc1</version>
+            <version>1.9.0-rc3</version>
         </dependency>
     </dependencies>
 </project>
